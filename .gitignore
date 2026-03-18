@@ -1,0 +1,7 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: if you ever use Node.js
+node_modules/
+.env

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Nature Safety – Contact Us</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans antialiased">
+
+<!-- Top Bar (hidden on mobile) -->
+<div class="bg-[#0B2A4A] text-slate-300 py-2 px-4 sm:px-6 lg:px-8 text-xs sm:text-sm hidden md:block">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex space-x-6">
+      <span class="flex items-center">
+        <svg class="w-4 h-4 mr-2 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        (613) 552-2460
+      </span>
+      <span class="flex items-center">
+        <svg class="w-4 h-4 mr-2 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        info@2ndnaturesafety.ca
+      </span>
+    </div>
+    <div class="flex items-center">
+      <svg class="w-4 h-4 mr-2 text-[#4CAF50]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      Located in Ottawa, serving all of Ontario
+    </div>
+  </div>
+</div>
+
+<!-- Header (sticky) -->
+<header id="main-header" class="sticky top-0 z-50 transition-all duration-500 bg-white py-5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center group">
+        <div class="relative w-10 h-10 mr-3 flex items-center justify-center rounded-full border-2 border-[#0B2A4A] overflow-hidden bg-white group-hover:shadow-md transition-all">
+          <div class="absolute top-0 left-0 w-full h-1/2 bg-[#0B2A4A] opacity-10"></div>
+          <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#4CAF50]"></div>
+          <div class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#1E3A8A]"></div>
+          <svg class="w-6 h-6 text-[#0B2A4A] relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h1 class="font-bold text-xl sm:text-2xl text-[#0B2A4A] leading-none tracking-tight">2nd Nature</h1>
+          <p class="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-widest mt-1">Safety Consulting</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-sm font-medium text-slate-700 hover:text-[#1E3A8A]">Home</a>
+        <a href="about.html" class="text-sm font-medium text-slate-700 hover:text-[#1E3A8A]">About Us</a>
+        <a href="services.html" class="text-sm font-medium text-slate-700 hover:text-[#1E3A8A]">Services & Training</a>
+        <a href="contact.html" class="text-sm font-medium text-[#1E3A8A]">Contact</a>
+        <a href="booking.html" class="bg-[#1E3A8A] hover:bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5">Book Training</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-[#1E3A8A] focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu (hidden by default) -->
+<div id="mobile-menu" class="md:hidden bg-white border-b border-slate-100 overflow-hidden hidden">
+  <div class="px-4 pt-2 pb-6 space-y-1 shadow-inner">
+    <a href="index.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-slate-700">Home</a>
+    <a href="about.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-slate-700">About Us</a>
+    <a href="services.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-slate-700">Services & Training</a>
+    <a href="contact.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-[#1E3A8A]">Contact</a>
+    <div class="pt-4">
+      <a href="booking.html" class="block w-full text-center bg-[#1E3A8A] hover:bg-blue-600 text-white px-6 py-3 rounded-full font-bold transition-colors">Book Training Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT - Contact page -->
+<div class="w-full bg-slate-50">
+
+  <!-- Header -->
+  <div class="relative py-24 border-b-4 border-[#1E3A8A] overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://picsum.photos/seed/contact_us/2070/1080" alt="Contact us" class="w-full h-full object-cover opacity-20" referrerpolicy="no-referrer" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0B2A4A] via-[#0B2A4A]/95 to-[#0B2A4A]/80"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight fade-down">
+        Contact Us
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto font-light fade-up">
+        Get in touch with our team for any inquiries or to request a quote.
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Contact Information -->
+        <div class="fade-right">
+          <h2 class="text-[#1E3A8A] font-semibold tracking-widest uppercase text-sm mb-4 flex items-center">
+            <span class="w-8 h-px bg-[#1E3A8A] mr-3"></span>
+            Get In Touch
+          </h2>
+          <h3 class="text-4xl md:text-5xl font-bold text-[#0B2A4A] mb-8 leading-tight">We're Here to Help</h3>
+          <p class="text-slate-600 text-lg mb-12 leading-relaxed font-light">
+            Whether you need more information about our services, have a specific safety challenge, or want to schedule a consultation, our team is ready to assist you.
+          </p>
+
+          <!-- Contact Details Cards -->
+          <div class="space-y-6">
+            <div class="flex items-start bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-[#4CAF50] mr-4 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#0B2A4A] mb-1">Phone</h4>
+                <p class="text-slate-600 text-lg">(613) 552-2460</p>
+                <p class="text-sm text-slate-500 mt-1">Mon-Fri, 8am-5pm EST</p>
+              </div>
+            </div>
+
+            <div class="flex items-start bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-[#4CAF50] mr-4 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#0B2A4A] mb-1">Email</h4>
+                <p class="text-slate-600 text-lg">info@2ndnaturesafety.ca</p>
+                <p class="text-sm text-slate-500 mt-1">We'll respond within 24 hours</p>
+              </div>
+            </div>
+
+            <div class="flex items-start bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+              <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-[#4CAF50] mr-4 shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#0B2A4A] mb-1">Location</h4>
+                <p class="text-slate-600 text-lg">Ottawa, Ontario</p>
+                <p class="text-sm text-slate-500 mt-1">Serving all of Ontario</p>
+              </div>
+            </div>
+          </div>
+
+        <!-- Map Placeholder - Styled Box -->
+<div class="mt-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100 h-64 flex items-center justify-center">
+  <div class="text-center">
+    <svg class="w-12 h-12 text-[#4CAF50] mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+    </svg>
+    <p class="text-slate-600 font-medium">Ottawa, Ontario</p>
+    <p class="text-sm text-slate-400">Serving all of Ontario</p>
+  </div>
+</div>
+
+        <!-- Contact Form -->
+        <div class="fade-left">
+          <div class="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 p-8 md:p-12">
+            <h3 class="text-3xl font-bold text-[#0B2A4A] mb-8">Send a Message</h3>
+            
+            <form id="contact-form" class="space-y-6" onsubmit="return false;">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-2">Full Name *</label>
+                  <input type="text" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="John Doe">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
+                  <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="Acme Corp">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
+                  <input type="email" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="john@example.com">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number *</label>
+                  <input type="tel" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="(613) 552-2460">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
+                <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="General Inquiry">
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Message *</label>
+                <textarea rows="5" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all resize-none" placeholder="Tell us how we can help..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-[#1E3A8A] hover:bg-blue-600 text-white font-bold text-lg py-4 rounded-full shadow-lg shadow-[#1E3A8A]/30 hover:shadow-[#1E3A8A]/50 transition-all flex items-center justify-center group hover:-translate-y-1">
+                Send Message
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+
+              <p class="text-center text-sm text-slate-500 mt-4">
+                We'll get back to you within 1 business day.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Main Footer -->
+<footer class="bg-[#0B2A4A] text-slate-300 pt-16 pb-8 border-t-4 border-[#1E3A8A]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- Brand -->
+      <div class="space-y-4">
+        <div class="flex items-center">
+          <div class="relative w-8 h-8 mr-3 flex items-center justify-center rounded-full border-2 border-[#0B2A4A] overflow-hidden bg-white">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-[#0B2A4A] opacity-10"></div>
+            <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#4CAF50]"></div>
+            <div class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#1E3A8A]"></div>
+          </div>
+          <h2 class="font-bold text-2xl text-white">2nd Nature</h2>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">
+           Training Safety at Second Nature. Located in Ottawa and serving all of Ontario with premium training, consulting, and equipment supply.
+        </p>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold text-white text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-sm hover:text-[#1E3A8A] transition-colors flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Home</a></li>
+          <li><a href="about.html" class="text-sm hover:text-[#1E3A8A] transition-colors flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> About Us</a></li>
+          <li><a href="services.html" class="text-sm hover:text-[#1E3A8A] transition-colors flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Services & Training</a></li>
+          <li><a href="contact.html" class="text-sm hover:text-[#1E3A8A] transition-colors flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Contact</a></li>
+          <li><a href="booking.html" class="text-sm hover:text-[#1E3A8A] transition-colors flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Book a Course</a></li>
+        </ul>
+      </div>
+      <!-- Core Services -->
+      <div>
+        <h3 class="font-semibold text-white text-lg mb-4">Core Services</h3>
+        <ul class="space-y-2">
+          <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Health & Safety Training</li>
+          <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Safety Consulting</li>
+          <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Equipment Supplier</li>
+          <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Site Inspections & Audits</li>
+          <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Incident Investigations</li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold text-white text-lg mb-4">Contact Us</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <svg class="w-5 h-5 text-[#4CAF50] mr-3 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span class="text-sm">Located in Ottawa,<br>serving all of Ontario</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-[#4CAF50] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span class="text-sm">(613) 552-2460</span>
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-[#4CAF50] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span class="text-sm">info@2ndnaturesafety.ca</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-xs text-slate-500 mb-4 md:mb-0">
+        &copy; <span id="current-year"></span> 2nd Nature Safety Consulting. All rights reserved.
+      </p>
+      <div class="flex space-x-6 text-xs text-slate-500">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+    <div class="text-center text-sm text-slate-500 mt-6">
+      Design & Development by <a href="https://bakaltech.github.io/bakal-digital/" target="_blank" rel="noopener noreferrer" class="text-[#4CAF50] hover:underline">Bakal Digital</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+<script>
+  // Disable form submission for static demo
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Form submission is disabled in this static demo. Please integrate with your backend.');
+      });
+    }
+  });
+</script>
+
+<!-- Chatbot Widget -->
+<button id="chatbot-toggle">
+  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+  </svg>
+</button>
+
+<div id="chatbot-container">
+  <!-- Header -->
+  <div class="chatbot-header">
+    <div class="chatbot-header-left">
+      <div class="chatbot-avatar">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="chatbot-title">Second Nature Assistant</div>
+        <div class="chatbot-subtitle">Typically replies instantly</div>
+      </div>
+    </div>
+    <button id="chatbot-close" class="chatbot-close">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Messages -->
+  <div id="chatbot-messages" class="chatbot-messages"></div>
+
+  <!-- FAQ Footer -->
+  <div class="chatbot-footer">
+    <div class="chatbot-footer-label">Suggested Questions</div>
+    <div id="chatbot-faqs" class="chatbot-faqs"></div>
+  </div>
+</div>
+</body>
+</html>
