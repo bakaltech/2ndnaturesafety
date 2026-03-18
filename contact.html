@@ -164,58 +164,55 @@
           </div>
         </div>
 
-        <!-- Right Column: Contact Form -->
-        <div class="fade-left h-full">
-          <div class="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 p-8 md:p-12 h-full flex flex-col">
-            <h3 class="text-3xl font-bold text-[#0B2A4A] mb-8">Send a Message</h3>
-            
-            <form id="contact-form" class="space-y-6 flex-1 flex flex-col" onsubmit="return false;">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-sm font-semibold text-slate-700 mb-2">Full Name *</label>
-                  <input type="text" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="John Doe">
-                </div>
-                <div>
-                  <label class="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
-                  <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="Acme Corp">
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
-                  <input type="email" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="john@example.com">
-                </div>
-                <div>
-                  <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number *</label>
-                  <input type="tel" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="(613) 552-2460">
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
-                <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="General Inquiry">
-              </div>
-
-              <div class="flex-1">
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Message *</label>
-                <textarea rows="5" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all resize-none" placeholder="Tell us how we can help..."></textarea>
-              </div>
-
-              <button type="submit" class="w-full bg-[#1E3A8A] hover:bg-blue-600 text-white font-bold text-lg py-4 rounded-full shadow-lg shadow-[#1E3A8A]/30 hover:shadow-[#1E3A8A]/50 transition-all flex items-center justify-center group hover:-translate-y-1">
-                Send Message
-                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </button>
-
-              <p class="text-center text-sm text-slate-500 mt-4">
-                We'll get back to you within 1 business day.
-              </p>
-            </form>
-          </div>
+       <!-- Right Column: Contact Form -->
+<div class="fade-left h-full">
+  <div class="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 p-8 md:p-12 h-full flex flex-col">
+    <h3 class="text-3xl font-bold text-[#0B2A4A] mb-8">Send a Message</h3>
+    
+    <form id="contact-form" class="space-y-6 flex flex-col flex-grow" onsubmit="return false;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-2">Full Name *</label>
+          <input type="text" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="John Doe">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
+          <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="Acme Corp">
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
+          <input type="email" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="john@example.com">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number *</label>
+          <input type="tel" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="(613) 552-2460">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
+        <input type="text" class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all" placeholder="General Inquiry">
+      </div>
+
+      <div class="flex-grow">
+        <label class="block text-sm font-semibold text-slate-700 mb-2">Message *</label>
+        <textarea rows="5" required class="w-full px-5 py-4 bg-slate-50 rounded-xl border border-slate-200 focus:ring-2 focus:ring-[#1E3A8A] focus:border-[#1E3A8A] outline-none transition-all resize-none h-32" placeholder="Tell us how we can help..."></textarea>
+      </div>
+
+      <div class="mt-auto pt-6">
+        <button type="submit" class="w-full bg-[#1E3A8A] hover:bg-blue-600 text-white font-bold text-lg py-4 rounded-full shadow-lg shadow-[#1E3A8A]/30 hover:shadow-[#1E3A8A]/50 transition-all flex items-center justify-center group hover:-translate-y-1">
+          Send Message
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </button>
+        <p class="text-center text-sm text-slate-500 mt-4">
+          We'll get back to you within 1 business day.
+        </p>
+      </div>
+    </form>
+  </div>
 </div>
 
 <!-- Main Footer -->
