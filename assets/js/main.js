@@ -1,36 +1,58 @@
 // ============================================
-// MAIN.JS - Core functionality (no chatbot)
+// MAIN.JS - Core functionality (mobile menu, sticky header, carousel)
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
   // ---------- Mobile Menu ----------
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
-  const header = document.getElementById('main-header');
-  const yearSpan = document.getElementById('current-year');
 
   if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', function() {
+    // Toggle menu on button click
+    menuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
       mobileMenu.classList.toggle('hidden');
+
+      // Change icon between hamburger and X
       const icon = menuBtn.querySelector('svg');
-      if (mobileMenu.classList.contains('hidden')) {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
-      } else {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+      if (icon) {
+        if (mobileMenu.classList.contains('hidden')) {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        } else {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+        }
       }
     });
 
+    // Close menu when a link inside it is clicked
     const links = mobileMenu.querySelectorAll('a');
     links.forEach(link => {
       link.addEventListener('click', function() {
         mobileMenu.classList.add('hidden');
         const icon = menuBtn.querySelector('svg');
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        if (icon) {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        }
       });
     });
+
+    // ---------- Close mobile menu on scroll ----------
+    window.addEventListener('scroll', function() {
+      // If menu is open, close it
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        const icon = menuBtn.querySelector('svg');
+        if (icon) {
+          icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        }
+      }
+    });
+  } else {
+    console.warn('Mobile menu elements not found');
   }
 
   // ---------- Sticky Header ----------
+  const header = document.getElementById('main-header');
   if (header) {
     window.addEventListener('scroll', function() {
       if (window.scrollY > 20) {
@@ -42,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // ---------- Update Copyright Year ----------
+  const yearSpan = document.getElementById('current-year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
@@ -52,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Carousel function (remains here)
+// Carousel function (unchanged)
 function initCarousel() {
   const images = document.querySelectorAll('.carousel-image');
   const indicators = document.querySelectorAll('.carousel-indicator');

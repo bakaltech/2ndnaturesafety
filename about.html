@@ -276,7 +276,7 @@
           <li class="text-sm text-slate-400 flex items-center"><svg class="w-4 h-4 mr-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg> Incident Investigations</li>
         </ul>
       </div>
-      <!-- Contact -->
+       <!-- Contact -->
       <div>
         <h3 class="font-semibold text-white text-lg mb-4">Contact Us</h3>
         <ul class="space-y-4">
@@ -295,29 +295,33 @@
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-xs text-slate-500 mb-4 md:mb-0">
+    <div class="border-t border-slate-800 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
+      <div class="text-xs text-slate-500 text-center lg:text-left">
         &copy; <span id="current-year"></span> Second Nature Safety Consulting. All rights reserved.
-      </p>
+      </div>
       <div class="flex space-x-6 text-xs text-slate-500">
         <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
         <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
       </div>
-    </div>
-    <!-- Bakal Digital Credit -->
-    <div class="text-center text-sm text-slate-500 mt-6">
-      Design & Development by <a href="https://bakaltech.github.io/bakal-digital/" target="_blank" rel="noopener noreferrer" class="text-[#4CAF50] hover:underline">Bakal Digital</a>
+      <div class="text-xs text-slate-500 text-center lg:text-right">
+        Design & Development by <a href="https://bakaltech.github.io/bakal-digital/" target="_blank" rel="noopener noreferrer" class="text-[#4CAF50] hover:underline transition-colors">Bakal Digital</a>
+      </div>
     </div>
   </div>
 </footer>
 
 <!-- Scripts -->
-<script src="assets/js/main.js"></script>
 <script>
-  // Initialize carousel on about page
+  // Course pre-selection from URL parameter
   document.addEventListener('DOMContentLoaded', function() {
-    if (document.getElementById('about-carousel')) {
-      initCarousel();
+    const urlParams = new URLSearchParams(window.location.search);
+    const course = urlParams.get('course');
+    const courseSelect = document.getElementById('course-select');
+    if (course && courseSelect) {
+      const optionExists = Array.from(courseSelect.options).some(opt => opt.value === course);
+      if (optionExists) {
+        courseSelect.value = course;
+      }
     }
   });
 </script>
@@ -330,7 +334,6 @@
 </button>
 
 <div id="chatbot-container">
-  <!-- Header -->
   <div class="chatbot-header">
     <div class="chatbot-header-left">
       <div class="chatbot-avatar">
@@ -350,10 +353,8 @@
     </button>
   </div>
 
-  <!-- Messages -->
   <div id="chatbot-messages" class="chatbot-messages"></div>
 
-  <!-- FAQ Footer -->
   <div class="chatbot-footer">
     <div class="chatbot-footer-label">Suggested Questions</div>
     <div id="chatbot-faqs" class="chatbot-faqs"></div>

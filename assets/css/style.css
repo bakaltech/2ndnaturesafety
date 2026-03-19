@@ -71,14 +71,6 @@ header.scrolled {
   padding-bottom: 0.75rem !important;
 }
 
-/* Mobile menu */
-#mobile-menu.hidden {
-  display: none;
-}
-#mobile-menu:not(.hidden) {
-  display: block;
-}
-
 /* Star fill for testimonials */
 .fill-current {
   fill: currentColor;

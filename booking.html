@@ -63,15 +63,14 @@
       </nav>
 
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-[#1E3A8A] focus:outline-none">
+      <button id="mobile-menu-btn" class="md:hidden p-3 -mr-3 text-slate-600 hover:text-[#1E3A8A] focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </div>
-</header>
 
-<!-- Mobile Menu (hidden by default) -->
-<div id="mobile-menu" class="md:hidden bg-white border-b border-slate-100 overflow-hidden hidden">
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 overflow-y-auto hidden shadow-xl max-h-[calc(100vh-80px)]">
   <div class="px-4 pt-2 pb-6 space-y-1 shadow-inner">
     <a href="index.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-slate-700">Home</a>
     <a href="about.html" class="block px-3 py-4 text-base font-medium border-b border-slate-50 text-slate-700">About Us</a>
@@ -82,6 +81,7 @@
     </div>
   </div>
 </div>
+</header>
 
 <!-- MAIN CONTENT - Booking page -->
 <div class="w-full bg-slate-50">
@@ -113,9 +113,11 @@
           ⚡ Demo mode – messages will be sent to the developer for preview. After purchase, you can easily connect your own email.
         </div>
 
-        <form id="booking-form" class="space-y-10" action="https://formspree.io/f/xvzwdjlw" method="POST">
+        <form id="booking-form" class="space-y-10" action="https://formsubmit.co/bakal.tec@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="New Booking Request">
-          <input type="hidden" name="_redirect" value="https://bakaltech.github.io/2ndnaturesafety/thank-you.html">
+          <input type="hidden" name="_next" value="https://secondnaturesafety.ca/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
           
           <!-- Course Selection -->
           <div>
@@ -310,23 +312,22 @@
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-xs text-slate-500 mb-4 md:mb-0">
+    <div class="border-t border-slate-800 pt-8 flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
+      <div class="text-xs text-slate-500 text-center lg:text-left">
         &copy; <span id="current-year"></span> Second Nature Safety Consulting. All rights reserved.
-      </p>
+      </div>
       <div class="flex space-x-6 text-xs text-slate-500">
         <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
         <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
       </div>
-    </div>
-    <div class="text-center text-sm text-slate-500 mt-6">
-      Design & Development by <a href="https://bakaltech.github.io/bakal-digital/" target="_blank" rel="noopener noreferrer" class="text-[#4CAF50] hover:underline">Bakal Digital</a>
+      <div class="text-xs text-slate-500 text-center lg:text-right">
+        Design & Development by <a href="https://bakaltech.github.io/bakal-digital/" target="_blank" rel="noopener noreferrer" class="text-[#4CAF50] hover:underline transition-colors">Bakal Digital</a>
+      </div>
     </div>
   </div>
 </footer>
 
 <!-- Scripts -->
-<script src="assets/js/main.js"></script>
 <script>
   // Course pre-selection from URL parameter
   document.addEventListener('DOMContentLoaded', function() {
