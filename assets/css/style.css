@@ -356,3 +356,25 @@ header.scrolled {
   max-height: 100%;
   object-fit: contain;
 }
+
+/* Typing dots animation for chatbot */
+.typing-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+}
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #1E3A8A;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: typing 1.4s infinite;
+}
+.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typing {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.6; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
